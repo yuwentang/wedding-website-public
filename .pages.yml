@@ -1,0 +1,139 @@
+media:
+  label: 婚禮照片
+  input: images
+  output: images
+  extensions: [avif, gif, jpeg, jpg, png, webp]
+  rename: safe
+
+content:
+  - name: site
+    label: 網站基本資料
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: couple
+        label: 新人姓名
+        type: string
+        required: true
+      - name: dateLabel
+        label: 婚禮日期
+        type: string
+        required: true
+      - name: venue
+        label: 婚禮場地
+        type: string
+        required: true
+      - name: title
+        label: 封面副標
+        type: string
+        required: true
+      - name: intro
+        label: 開場文
+        type: text
+        required: true
+      - name: thanks
+        label: 感謝文
+        type: text
+        required: true
+      - name: heroImage
+        label: 封面照片
+        type: image
+      - name: heroImageAlt
+        label: 封面照片替代文字
+        type: string
+        description: 上傳照片時，填寫照片內容的簡短描述。
+
+  - name: program
+    label: 婚禮流程
+    type: file
+    path: data/program.json
+    format: json
+    fields:
+      - name: items
+        label: 流程項目
+        type: object
+        description: 依開始時間排列。同時開始的項目可以相鄰。
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "{start} · {title}"
+        fields:
+          - name: title
+            label: 節目名稱
+            type: string
+            required: true
+          - name: start
+            label: 開始時間
+            type: string
+            required: true
+            description: 使用 24 小時制 HH:mm，例如 14:05。
+            pattern: '^(?:[01][0-9]|2[0-3]):[0-5][0-9]$'
+          - name: end
+            label: 結束時間
+            type: string
+            description: 使用 24 小時制 HH:mm。單點節目與合照可留空。
+            pattern: '^(?:(?:[01][0-9]|2[0-3]):[0-5][0-9])?$'
+          - name: type
+            label: 節目類型
+            type: select
+            required: true
+            options:
+              values:
+                - name: welcome
+                  label: 迎賓
+                - name: ceremony
+                  label: 結婚禮拜
+                - name: banquet
+                  label: 婚宴
+                - name: music
+                  label: 音樂演出
+                - name: photo
+                  label: 合照
+          - name: id
+            label: 節目識別碼
+            type: string
+            required: true
+            pattern: '^[a-z0-9-]+$'
+            description: 新節目填唯一的英數識別碼，例如 guest-duet。可用小寫英文字母、數字和連字號。既有節目沿用原值。
+          - name: description
+            label: 流程說明
+            type: text
+            description: 可填上菜、敬酒或其他現場活動說明。
+          - name: meaning
+            label: 儀式意義
+            type: text
+            description: 用於結婚禮拜，簡述該儀式的含義。
+          - name: people
+            label: 帶領者或參與者
+            type: text
+            description: 用於結婚禮拜，可填姓名、角色與介紹。
+          - name: chapter
+            label: 音樂章名
+            type: string
+            description: 音樂演出必填。章次依流程順序產生。
+          - name: performer
+            label: 表演者
+            type: string
+            description: 音樂演出必填。可填一位或多位表演者姓名。
+          - name: performerBio
+            label: 表演者介紹
+            type: text
+            description: 選填，顯示在音樂故事卡的表演者姓名下方。
+          - name: songs
+            label: 曲目
+            type: string
+            list: true
+            description: 音樂演出至少填一首。每首歌各佔一項。
+          - name: story
+            label: 音樂故事
+            type: text
+            description: 音樂演出必填。簡述曲目與婚禮的關聯。
+          - name: image
+            label: 音樂故事照片
+            type: image
+          - name: imageAlt
+            label: 音樂照片替代文字
+            type: string
+            description: 上傳照片時，填寫照片內容的簡短描述。

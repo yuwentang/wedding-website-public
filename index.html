@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F7F2EA">
+  <title>婚禮流程</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <header id="top" class="cover">
+    <div id="cover-photo" class="cover-photo"></div>
+    <div class="cover-frame">
+      <div class="cover-copy">
+        <p id="date" class="cover-date" hidden></p>
+        <h1 id="couple">婚禮流程</h1>
+        <p id="subtitle" class="cover-subtitle" lang="en" hidden></p>
+        <p id="venue" class="cover-venue" hidden></p>
+        <p id="intro" class="cover-intro" hidden></p>
+        <a class="cover-link" href="#program">查看婚禮流程 <span aria-hidden="true">↓</span></a>
+        <p id="site-error" class="status" role="status" hidden></p>
+      </div>
+    </div>
+  </header>
+
+  <main id="program" aria-labelledby="program-heading" tabindex="-1">
+    <div class="program-heading content-width">
+      <h2 id="program-heading">婚禮流程</h2>
+      <p id="program-error" class="status" role="status" hidden></p>
+      <noscript><p class="status">請啟用 JavaScript 以查看婚禮流程。</p></noscript>
+    </div>
+    <div id="events"></div>
+  </main>
+
+  <footer class="closing">
+    <p id="thanks" hidden></p>
+    <a class="back-link" href="#top">回頁首 <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>

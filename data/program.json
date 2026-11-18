@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "id": "guest-arrival",
+      "type": "welcome",
+      "start": "11:30",
+      "end": "12:00",
+      "title": "賓客入場"
+    },
+    {
+      "id": "call-to-worship",
+      "type": "ceremony",
+      "start": "12:00",
+      "title": "宣召",
+      "meaning": "邀請在場親友一同進入禮拜，在上帝面前見證新人的婚約。"
+    },
+    {
+      "id": "flower-children",
+      "type": "ceremony",
+      "start": "12:00",
+      "end": "12:03",
+      "title": "花童進場",
+      "meaning": "花童走在隊伍前方，為婚禮進場揭開序幕。",
+      "people": "花童小虎、承承"
+    },
+    {
+      "id": "wedding-party",
+      "type": "ceremony",
+      "start": "12:03",
+      "end": "12:08",
+      "title": "伴郎伴娘進場",
+      "meaning": "伴郎與伴娘陪伴新人，一同迎接即將開始的立約。",
+      "people": "有謙與曉恩、永樂與傳惠依序進場。"
+    },
+    {
+      "id": "groom-entry",
+      "type": "ceremony",
+      "start": "12:08",
+      "end": "12:11",
+      "title": "加樂進場",
+      "meaning": "新郎走入會場，準備與新娘一同在親友面前立約。",
+      "people": "加樂，新郎"
+    },
+    {
+      "id": "bride-entry",
+      "type": "ceremony",
+      "start": "12:11",
+      "end": "12:14",
+      "title": "于文進場與交接",
+      "meaning": "新娘進場與新郎會合，一同走向接下來的婚約。",
+      "people": "于文，新娘"
+    },
+    {
+      "id": "worship",
+      "type": "ceremony",
+      "start": "12:14",
+      "end": "12:19",
+      "title": "販傻人敬拜",
+      "meaning": "透過詩歌向上帝表達敬拜與感謝。",
+      "people": "販傻人，由一群喜愛音樂的人與新娘共同組成，帶領詩歌敬拜。"
+    },
+    {
+      "id": "scripture-blessing",
+      "type": "ceremony",
+      "start": "12:19",
+      "end": "12:26",
+      "title": "讀經祝福",
+      "meaning": "透過經文與分享，為新人的婚姻送上祝福。",
+      "people": "周以明、王卿寶伉儷分享經文與婚姻經驗。"
+    },
+    {
+      "id": "marriage-covenant",
+      "type": "ceremony",
+      "start": "12:26",
+      "end": "12:36",
+      "title": "證婚",
+      "description": "神前立約、交換信物、宣告、揭紗與祝福禱告。",
+      "meaning": "新人在上帝與親友面前立約，交換信物，並接受婚姻宣告與祝福禱告。",
+      "people": "加樂與于文，新人"
+    },
+    {
+      "id": "marriage-encouragement",
+      "type": "ceremony",
+      "start": "12:36",
+      "end": "12:46",
+      "title": "婚姻勉勵",
+      "meaning": "透過婚姻經驗與提醒，鼓勵新人在共同生活中彼此扶持。",
+      "people": "張光利、張孝恂伉儷分享婚姻提醒與祝福。"
+    },
+    {
+      "id": "family-thanks",
+      "type": "ceremony",
+      "start": "12:46",
+      "end": "12:48",
+      "title": "謝親恩",
+      "meaning": "新人以永生花與卡片感謝父母的養育與陪伴。",
+      "people": "加樂與于文、新人父母"
+    },
+    {
+      "id": "prayer-and-grace",
+      "type": "ceremony",
+      "start": "12:48",
+      "end": "12:50",
+      "title": "祝禱與謝飯",
+      "meaning": "為新人與賓客祝禱，並為即將享用的宴席感謝上帝。",
+      "people": "宋建宏牧師帶領禱告。"
+    },
+    {
+      "id": "lunch",
+      "type": "banquet",
+      "start": "12:50",
+      "end": "13:30",
+      "title": "上菜啦！",
+      "description": "請享用餐點，音樂故事稍後開始。"
+    },
+    {
+      "id": "couple-entrance",
+      "type": "music",
+      "start": "13:30",
+      "end": "13:40",
+      "title": "新人二次進場",
+      "chapter": "心動",
+      "performer": "加樂 & 于文",
+      "songs": ["我喜歡你", "無止盡的愛"],
+      "story": "從一句「我喜歡你」開始，到決定用一生延續這份愛。這兩首歌，是兩個人故事最直接的開場。"
+    },
+    {
+      "id": "toast",
+      "type": "banquet",
+      "start": "13:40",
+      "end": "13:50",
+      "title": "香檳塔與總敬酒"
+    },
+    {
+      "id": "faith-home",
+      "type": "music",
+      "start": "13:55",
+      "end": "14:00",
+      "title": "信心之家獻詩",
+      "chapter": "承諾",
+      "performer": "信心之家",
+      "songs": ["伊甸園的誓言"],
+      "story": "愛不只是一個瞬間的感動，而是在祝福中，一起許下長久的約定。"
+    },
+    {
+      "id": "reservoir-church",
+      "type": "music",
+      "start": "14:05",
+      "end": "14:10",
+      "title": "水庫教會獻詩",
+      "chapter": "愛的實踐",
+      "performer": "水庫教會獻詩",
+      "songs": ["愛的彰顯"],
+      "story": "真正的愛會被看見，在理解、包容與每一天的選擇裡。"
+    },
+    {
+      "id": "nancy",
+      "type": "music",
+      "start": "14:15",
+      "end": "14:25",
+      "title": "Nancy 演出",
+      "chapter": "陪伴與節日",
+      "performer": "Nancy",
+      "songs": ["Kiss Me", "Merry Christmas with You"],
+      "story": "最幸福的節日，不只因為燈光與禮物，而是重要的人就在身邊。"
+    },
+    {
+      "id": "hen-pang",
+      "type": "music",
+      "start": "14:30",
+      "end": "14:35",
+      "title": "很胖團演出",
+      "chapter": "相愛的日常",
+      "performer": "很胖團",
+      "songs": ["戀人"],
+      "story": "戀人不只是浪漫的稱呼，也是在生活中一起歡笑、一起面對每一天的夥伴。"
+    },
+    {
+      "id": "calvin",
+      "type": "music",
+      "start": "14:40",
+      "end": "14:45",
+      "title": "Calvin 演出",
+      "chapter": "把故事寫成我們",
+      "performer": "Calvin",
+      "songs": ["將故事寫成我們"],
+      "story": "從兩個人的故事走向「我們」。今天不是故事的結尾，而是共同生活的第一頁。"
+    },
+    {
+      "id": "group-photo",
+      "type": "photo",
+      "start": "14:45",
+      "title": "合照時間"
+    }
+  ]
+}
